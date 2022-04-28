@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'EB Garamond', serif;
+    background-color: lightsalmon;
+    background-image: url(../imag/pawel-czerwinski-9lNoGFaNI2c-unsplash.jpg);
+    }
+
+/* "header" */
+h1{
+    text-align: left;
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2rem;
+    transition: all 2s;
+}
+h1:hover{
+    font-size: 2.5rem;
+    color: rgb(6, 69, 62);
+}
+nav{
+    padding: 1rem;
+}
+nav ul{
+    list-style: none;
+    background-color: rgb(84, 14, 14);
+    height: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav li a{
+    color:white;
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+nav li a:hover{
+    background-color: lightcoral;
+    color:black;
+    height: 10%;
+}
+ul ul{
+    display: none;
+}
+ul ul li{
+    display: block;
+}
+ul li:hover ul{
+    display: block;
+}
+header h1{
+    color: rgb(75, 24, 24);
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: solid;
+    margin: 15px;
+    padding-left: 15px;
+    letter-spacing: 15px;
+    font-family: 'Major Mono Display', monospace;
+}
+img{
+    max-width: 600px;
+    margin: auto;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+img:hover{
+    border: rgb(41, 184, 160) solid 5px
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+section {
+background-size: cover;
+max-width: 1200px;
+align-items: center;
+width: 75%;
+margin: 0 15%;
+}
+.p{
+    align-items: center;
+}
+h2{
+    text-align: left;
+    font-size: 2rem;
+    transition: all 2s;  
+    text-align: center;
+}
+h2:hover{
+    font-size: 2.5rem;
+    color: rgb(6, 69, 62);
+}
+h3{
+    text-align: left;
+    font-size: 2rem;
+    transition: all 2s;  
+    text-align: center;
+}
+h3:hover{
+    font-size: 2.5rem;
+    color: rgb(6, 69, 62);
+}
+.historico img{
+    width: 600px;
+    margin: 2rem;
+    justify-content: center;  
+}
+.actual img{
+    width: 300px;
+    margin: 2rem;
+    justify-content: center;
+}
+.hist{
+    align-items: center;
+}
+/* "barra-social" */
+.barra-icon{
+position: fixed;
+left: 0;
+top: 200px;
+z-index: 2000;
+padding: 10px 15px;
+}
+.barra-icon ul{
+    list-style: none;
+}
+.barra-icon ul li a{
+display: inline-block;
+padding: 5px 10px;
+color: white;
+text-decoration: none;
+transition: all 500ms ease;
+}
+.barra-icon ul li .icon-facebook{background: #2e406e; border-radius: 0 1rem 0 0;}
+.barra-icon ul li .icon-twitter{background: #339dc5;}
+.barra-icon ul li .icon-instagram{background: #3f68a5;}
+.barra-icon ul li .icon-whatsapp{background: #10aa1d; border-radius: 0 0 1rem 0;}
+.barra-icon ul li a:hover{
+    padding: 10px 30px;
+}
+.section div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    margin: 15%;
+}
+/* "footer y contenedor" */
+footer h2{
+    margin: 10px;
+    padding: auto;
+    color: brown;
+}
+footer h5{
+    margin: 5px;
+}
+button{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1 px solid rgb(30, 160, 147);
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 2s;
+    margin-top: 15px;
+}
+button:hover{ 
+    border: 2px solid rgb(7, 54, 50);
+    color: white;
+    background-color: rgb(7, 54, 50);
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.item{
+    margin: 1rem;
+    padding: 1rem;
+    float: left;
+    margin: 0 5rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+.item   :hover{
+    color:rgb(30, 160, 147);
+    height: 50%;
+    font-weight: bold;
+}
+/* "formulario" */
+.formulario{
+    text-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.stilomicuenta{
+    width: auto;
+    display: flex;
+}
+.formulario1{
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.atencion{
+    text-align: center;
+    align-items: center;
+    width: 50%;
+}
+
+/* "local" */
+.local {
+    display: flex;
+}
+.local img{
+    width: 500px;
+    margin: 2rem;
+    align-content: center;
+    justify-content: center;
+}
+.locales {
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+/* "contacto* */
+.login {
+    display: flex;
+}
+.login img{
+    width: 500px;
+    margin: 2rem;
+    align-content: center;
+    justify-content: center;
+}
+.contactos {
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+/* "micuenta" */
+.cuentas {
+    display: flex;
+}
+.cuentas img{
+    width: 500px;
+    margin: 2rem;
+    justify-content: center;
+}
+.cuenta {
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+.cuenta {
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;}
+/* "productos con flex */
+.productos {
+    display: flex;
+}
+.product img{
+    width: 500px;
+    object-fit: cover;
+    margin: 2rem;     
+    justify-content: center;  
+}
+/* "productos galeria flex" */
+.actual{
+    display: flex;
+    line-height: 30px;
+    font-size: 20px;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.fotosp{
+    display: flex;
+    line-height: 30px;
+    font-size: 20px;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fotosp img{
+    width: 100px;
+    object-fit: cover;    
+    margin: 1rem;
+    border: 2px solid turquoise;
+    transition: all 2s;
+}
+.fotosp img:hover{
+    border: 3px solid lightcoral;
+    width: 130px;
+}
+/* "grid en index" */
+.dest{
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "pic1 pic2 pic3"
+    "pic4 pic2 pic5"
+    "pic4 pic6 pic6"
+    "pic7 pic7 pic8"
+    "pic9 pic9 pic10"
+    ;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+.dest img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery{
+    width: 80%;
+    height: 80%;
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "gal1 gal2 gal2"
+    "gal3 gal4 gal4"
+    "gal3 gal5 gal6"
+    ;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 2s;
+}
+.gallery img:hover{
+    height: 80%;
+    border: 5px solid lightcoral;
+}
+/* "nombrar al area"*/
+.imagen1{
+    grid-area: pic1;
+}
+.imagen2{
+    grid-area: pic2;
+}
+.imagen3{
+    grid-area: pic3;
+}
+.imagen4{
+    grid-area: pic4;
+}
+.imagen5{
+    grid-area: pic5;
+}
+.imagen6{
+    grid-area: pic6;
+}
+.imagen7{
+    grid-area: pic7;
+}
+.imagen8{
+    grid-area: pic8;
+}
+.imagen9{
+    grid-area: pic9;
+}
+.imagen10{
+    grid-area: pic10;
+}
+.gal1{
+    grid-area: gal1;
+}
+.gal2{
+    grid-area: gal2;
+}
+.gal3{
+    grid-area: gal3;
+}
+.gal4{
+    grid-area: gal4;
+}
+.gal5{
+    grid-area: gal5;
+}
+.gal6{
+    grid-area: gal6;
+}
+/* "@media" */
+@media (max-width: 500px){
+       
+    .item   :hover{
+        font-weight: normal;
+    }     
+    .dest{
+         grid-template-areas: 
+        "pic1 pic2" 
+        "pic3 pic4" 
+        "pic5 pic6"
+        "pic7 pic8"
+        "pic9 pic10"
+        ;
+        gap: 5px;
+    }
+    .gallery{
+        grid-template-areas: 
+        "gal1 gal2"
+        "gal3 gal4"
+        "gal5 gal6"
+        ;
+        gap: 5px;
+    }
+}
+@media (max-width: 480px){
+       
+    .item   :hover{
+        font-weight: normal;
+    }     
+    .dest{
+         grid-template-areas: 
+        "pic1" 
+        "pic2" 
+        "pic3" 
+        "pic4" 
+        "pic5"
+        "pic6"
+        "pic7" 
+        "pic8"
+        "pic9"
+        "pic10"
+        ;
+        gap: 5px;
+    }
+    .gallery{
+        grid-template-areas: 
+        "gal1"
+        "gal2"
+        "gal3" 
+        "gal4"
+        "gal5" 
+        "gal6"
+        ;
+        gap: 5px;
+    }
+}
