@@ -1,0 +1,46 @@
+footer {
+    h2{
+        margin: 10px;
+        padding: auto;
+        color: $bordo;
+        h5{
+            margin: 5px;
+        }
+    }
+    button{
+        padding: 8px;
+        border-radius: 8px;
+        border: 1 px solid $turquesa;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 2s;
+        margin-top: 15px;
+        &:hover{ 
+            border: 2px solid $petroleo;
+            color: $blanco;
+            background-color: $petroleo;
+        }
+    }
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.item{
+    margin: 1rem;
+    padding: 1rem;
+    float: left;
+    margin: 0 5rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    &:hover{
+        color: $turquesa;
+        height: 50%;
+        font-weight: bold;
+    }
+}
+}

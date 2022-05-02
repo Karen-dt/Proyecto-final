@@ -1,0 +1,24 @@
+
+$negro: black;
+$blanco: white;
+$coral: lightsalmon;
+$bordo:rgb(75, 24, 24);
+$turquesa: rgb(30, 160, 147);
+$petroleo: rgb(7, 54, 50);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'EB Garamond', serif;
+    background-color: $coral;
+    background-image: url(../imag/pawel-czerwinski-9lNoGFaNI2c-unsplash.jpg);
+}
+@import "header";
+@import "main";
+@import "footer";
+@import "@media";

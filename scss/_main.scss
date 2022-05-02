@@ -1,0 +1,292 @@
+main{
+    section {
+        background-size: cover;
+        max-width: 1200px;
+        align-items: center;
+        width: 75%;
+        margin: 0 15%;
+        .p{
+            align-items: center;
+    }
+    h2{
+        text-align: left;
+        font-size: 2rem;
+        transition: all 2s;  
+        text-align: center;
+        &:hover{
+            font-size: 2.5rem;
+            color: rgb(6, 69, 62);
+        }
+    }
+    h3{
+        text-align: left;
+        font-size: 2rem;
+        transition: all 2s;  
+        text-align: center;
+        &:hover{
+            font-size: 2.5rem;
+            color: rgb(6, 69, 62);
+        }
+    }
+    .historico img{
+        width: 600px;
+        margin: 2rem;
+        justify-content: center;  
+    }
+    .actual img{
+        width: 300px;
+        margin: 2rem;
+        justify-content: center;
+    }
+    .hist{
+        align-items: center;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 7rem;
+        margin: 15%;
+    }
+} 
+    
+    /* "barra-social" */
+    .barra-icon{
+        position: fixed;
+        left: 0;
+        top: 200px;
+        z-index: 2000;
+        padding: 10px 15px;
+        ul{
+            list-style: none;
+            li {
+                .icon-facebook{background: #2e406e; border-radius: 0 1rem 0 0;}
+                .icon-twitter{background: #339dc5;}
+                .icon-instagram{background: #3f68a5;}
+                .icon-whatsapp{background: #10aa1d; border-radius: 0 0 1rem 0;}
+                a{
+                    display: inline-block;
+                    padding: 5px 10px;
+                    color: white;
+                    text-decoration: none;
+                    transition: all 500ms ease;
+                    &:hover{
+                        padding: 10px 30px;
+                    }
+                } 
+            }
+        }
+    }
+
+    /* "formulario" */
+    @mixin formulario{
+        text-align: center;
+        align-items: center;
+    }
+    .formulario{
+        @include formulario;
+        padding-bottom: 15px;
+    }
+    .stilomicuenta{
+        width: auto;
+        display: flex;
+    }
+    .formulario1{
+        @include formulario;
+        width: 50%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .atencion{
+        @include formulario;
+        width: 50%;
+    }
+    
+    /* "local" */
+    @mixin local {
+        align-content: center;
+        justify-content: center;
+    }
+    .local {
+        display: flex;
+        img{
+            width: 500px;
+            margin: 2rem;
+            @include local;
+        }
+    }
+    .locales {
+        margin: 1rem;
+        padding: 1rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+    }
+    /* "contacto* */
+    .login {
+        display: flex;
+        img{
+            width: 500px;
+            margin: 2rem;
+            @include local;
+        }
+    }
+    .contactos {
+        @extend .locales;
+    }
+    /* "mi-cuenta" */
+    .cuentas {
+        display: flex;
+        img{
+            width: 500px;
+            margin: 2rem;
+            justify-content: center;
+        }
+    }
+    .cuenta {
+        @extend .locales;
+    }
+   
+    /* "productos con flex */
+    .productos {
+        display: flex;
+        img{
+            width: 500px;
+            object-fit: cover;
+            margin: 2rem;     
+            justify-content: center;  
+        }
+    }
+    
+    /* "productos galeria flex" */
+    .actual{
+        display: flex;
+        line-height: 30px;
+        font-size: 20px;
+        height: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .fotosp{
+        display: flex;
+        line-height: 30px;
+        font-size: 20px;
+        align-items: center;
+        height: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img{
+            width: 100px;
+            object-fit: cover;    
+            margin: 1rem;
+            border: 2px solid turquoise;
+            transition: all 2s;
+            &:hover{
+                border: 3px solid lightcoral;
+                width: 130px;
+            }
+        }
+    }
+    
+    /* "grid en index" */
+    .dest{
+        width: 80%;
+        max-width: 700px;
+        margin: auto;
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "pic1 pic2 pic3"
+        "pic4 pic2 pic5"
+        "pic4 pic6 pic6"
+        "pic7 pic7 pic8"
+        "pic9 pic9 pic10"
+        ;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        gap: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .gallery{
+        width: 80%;
+        height: 80%;
+        max-width: 700px;
+        margin: auto;
+        display: grid;
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "gal1 gal2 gal2"
+        "gal3 gal4 gal4"
+        "gal3 gal5 gal6"
+        ;
+        gap: 25px;
+        margin-bottom: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 2s;
+            &:hover{
+                height: 80%;
+                border: 5px solid lightcoral;
+            }
+        }
+    }
+
+    /* "nombrar al area"*/
+    .imagen1{
+        grid-area: pic1;
+    }
+    .imagen2{
+        grid-area: pic2;
+    }
+    .imagen3{
+        grid-area: pic3;
+    }
+    .imagen4{
+        grid-area: pic4;
+    }
+    .imagen5{
+        grid-area: pic5;
+    }
+    .imagen6{
+        grid-area: pic6;
+    }
+    .imagen7{
+        grid-area: pic7;
+    }
+    .imagen8{
+        grid-area: pic8;
+    }
+    .imagen9{
+        grid-area: pic9;
+    }
+    .imagen10{
+        grid-area: pic10;
+    }
+    .gal1{
+        grid-area: gal1;
+    }
+    .gal2{
+        grid-area: gal2;
+    }
+    .gal3{
+        grid-area: gal3;
+    }
+    .gal4{
+        grid-area: gal4;
+    }
+    .gal5{
+        grid-area: gal5;
+    }
+    .gal6{
+        grid-area: gal6;
+    }
+}
