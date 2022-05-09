@@ -1,6 +1,6 @@
 header{
     h1{
-        text-align: left;
+        text-align: center;
         color: $negro;
         font-family: 'Major Mono Display', monospace;
         font-size: 2rem;
@@ -10,9 +10,9 @@ header{
             color: $petroleo;
         }
     }
-    nav{
+    .navbar{
         padding: 1rem;
-        ul{
+        ul navbar-nav{
             list-style: none;
             background-color: $bordo;
             height: 50px;
