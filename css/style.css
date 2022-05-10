@@ -31,13 +31,6 @@ header header h1 {
   letter-spacing: 15px;
   font-family: 'Major Mono Display', monospace; }
 
-header img {
-  max-width: 600px;
-  margin: auto;
-  border-radius: 1rem 1rem 1rem 1rem; }
-  header img:hover {
-    border: #1ea093 solid 5px; }
-
 header ul {
   list-style: none; }
 
