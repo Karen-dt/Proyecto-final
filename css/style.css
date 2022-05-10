@@ -67,14 +67,16 @@ main section {
     width: 800px;
     margin: 2rem;
     justify-content: center;
-    transition: 2s; }
+    transition: 2s;
+    border-radius: 1rem 1rem 1rem 1rem; }
     main section .historico img:hover {
       border: 3px solid lightsalmon; }
   main section .actual img {
     width: 300px;
     margin: 2rem;
     justify-content: center;
-    transition: 2s; }
+    transition: 2s;
+    border-radius: 1rem 1rem 1rem 1rem; }
     main section .actual img:hover {
       border: 3px solid lightsalmon; }
   main section .hist {
@@ -140,19 +142,21 @@ main .product {
 main .formulario {
   text-align: center;
   align-items: center;
+  text-transform: capitalize;
   padding-bottom: 15px; }
 
 main .formulario1 {
   text-align: center;
   align-items: center;
+  text-transform: capitalize;
   width: 50%;
   padding-top: 15px;
-  padding-bottom: 15px;
-  text-transform: none; }
+  padding-bottom: 15px; }
 
 main .atencion {
   text-align: center;
   align-items: center;
+  text-transform: capitalize;
   width: 50%; }
 
 main .local {
@@ -162,6 +166,7 @@ main .local {
     margin: 2rem;
     align-content: center;
     justify-content: center;
+    text-transform: capitalize;
     transition: 2s; }
     main .local img:hover {
       border: 3px solid lightsalmon; }
@@ -177,7 +182,9 @@ main .login {
     width: 500px;
     margin: 2rem;
     align-content: center;
-    justify-content: center; }
+    justify-content: center;
+    text-transform: capitalize;
+    border-radius: 1rem 1rem 1rem 1rem; }
     main .login img:hover {
       border: 3px solid lightsalmon; }
 
@@ -190,7 +197,8 @@ main .cuentas {
   main .cuentas img {
     width: 500px;
     margin: 2rem;
-    justify-content: center; }
+    justify-content: center;
+    border-radius: 1rem 1rem 1rem 1rem; }
     main .cuentas img:hover {
       border: 3px solid lightsalmon; }
 
@@ -200,7 +208,8 @@ main .productos {
     width: 500px;
     object-fit: cover;
     margin: 2rem;
-    justify-content: center; }
+    justify-content: center;
+    border-radius: 1rem 1rem 1rem 1rem; }
 
 main .actual {
   display: flex;
@@ -223,13 +232,14 @@ main .fotosp {
     object-fit: cover;
     margin: 1rem;
     border: 2px solid #1ea093;
-    transition: all 2s; }
+    transition: all 2s;
+    border-radius: 1rem 1rem 1rem 1rem; }
     main .fotosp img:hover {
       border: 3px solid lightsalmon;
       width: 130px; }
 
 main .dest {
-  width: 80%;
+  width: 100%;
   max-width: 700px;
   margin: auto;
   display: grid;
@@ -242,7 +252,8 @@ main .dest {
   main .dest img {
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    border-radius: 1rem 1rem 1rem 1rem; }
 
 main .gallery {
   width: 80%;
@@ -261,7 +272,8 @@ main .gallery {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 2s; }
+    transition: all 2s;
+    border-radius: 1rem 1rem 1rem 1rem; }
     main .gallery img:hover {
       height: 80%;
       border: 5px solid lightsalmon; }
@@ -322,7 +334,8 @@ main button {
   cursor: pointer;
   font-weight: 500;
   transition: all 2s;
-  margin-top: 15px; }
+  margin-top: 15px;
+  text-transform: capitalize; }
   main button:hover {
     border: 2px solid #073632;
     color: white;
@@ -343,7 +356,8 @@ footer button {
   cursor: pointer;
   font-weight: 500;
   transition: all 2s;
-  margin-top: 15px; }
+  margin-top: 15px;
+  text-transform: capitalize; }
   footer button:hover {
     border: 2px solid #073632;
     color: white;
@@ -363,7 +377,7 @@ footer .item {
   float: left;
   margin: 0 5rem;
   line-height: 1.5rem;
-  text-transform: inherit; }
+  text-transform: capitalize; }
   footer .item:hover {
     color: #1ea093;
     height: 50%;

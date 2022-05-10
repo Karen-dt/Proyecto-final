@@ -16,6 +16,7 @@ footer {
         font-weight: 500;
         transition: all 2s;
         margin-top: 15px;
+        text-transform: capitalize;
         &:hover{ 
             border: 2px solid $petroleo;
             color: $blanco;
@@ -36,7 +37,7 @@ footer {
     float: left;
     margin: 0 5rem;
     line-height: 1.5rem;
-    text-transform: inherit;
+    text-transform: capitalize;
     &:hover{
         color: $turquesa;
         height: 50%;
