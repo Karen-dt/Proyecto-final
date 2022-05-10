@@ -12,9 +12,11 @@ main{
         text-align: center;
         font-size: 2rem;
         transition: all 2s;  
+        color: $bordo;
+        transition: 2s;
         &:hover{
             font-size: 2.5rem;
-            color: rgb(6, 69, 62);
+            color: $petroleo;
         }
     }
     h3{
@@ -22,20 +24,29 @@ main{
         font-size: 2rem;
         transition: all 2s;  
         text-align: center;
+        transition: 2s;
         &:hover{
             font-size: 2.5rem;
-            color: rgb(6, 69, 62);
+            color: $petroleo;
         }
     }
     .historico img{
-        width: 1000px;
+        width: 800px;
         margin: 2rem;
-        justify-content: center;  
+        justify-content: center;
+        transition: 2s;
+        &:hover{
+            border: 3px solid $coral;
+        }
     }
     .actual img{
         width: 300px;
         margin: 2rem;
         justify-content: center;
+        transition: 2s;
+        &:hover{
+            border: 3px solid $coral;
+        }
     }
     .hist{
         align-items: center;
@@ -46,7 +57,6 @@ main{
     }
 } 
     
-    /* "barra-social" */
     .barra-icon{
         position: fixed;
         left: 0;
@@ -63,7 +73,7 @@ main{
                 a{
                     display: inline-block;
                     padding: 5px 10px;
-                    color: white;
+                    color: $blanco;
                     text-decoration: none;
                     transition: all 500ms ease;
                     &:hover{
@@ -88,13 +98,23 @@ main{
         margin: 0 5rem;
         line-height: 1.5rem;
         text-transform: uppercase;
+        img{
+            width: 500px;
+            margin: 2rem;
+            justify-content: center;
+            transition: 2s;
+
+            &:hover{
+                border: 3px solid $coral;
+            }
+        }
         &:hover{
             color: $turquesa;
             height: 50%;
             font-weight: bold;
         }
     }
-    /* "formulario" */
+
     @mixin formulario{
         text-align: center;
         align-items: center;
@@ -108,13 +128,14 @@ main{
         width: 50%;
         padding-top: 15px;
         padding-bottom: 15px;
+        text-transform: none
     }
     .atencion{
         @include formulario;
         width: 50%;
     }
     
-    /* "local" */
+
     @mixin local {
         align-content: center;
         justify-content: center;
@@ -125,40 +146,52 @@ main{
             width: 500px;
             margin: 2rem;
             @include local;
+            transition: 2s;
+            &:hover{
+                border: 3px solid $coral;
+            }
         }
     }
     .locales {
-        margin: 1rem;
         padding: 1rem;
         line-height: 1.5rem;
         text-transform: uppercase;
     }
-    /* "contacto* */
+
     .login {
         display: flex;
         img{
             width: 500px;
             margin: 2rem;
             @include local;
+            &:hover{
+                border: 3px solid $coral;
+            }
         }
     }
-    .contactos {
+    .stilomicuenta {
         @extend .locales;
+        text-align: justify;
+        display: flex;
+
     }
-    /* "mi-cuenta" */
+
     .cuentas {
         display: flex;
         img{
             width: 500px;
             margin: 2rem;
             justify-content: center;
+            &:hover{
+                border: 3px solid $coral;
+            }
         }
     }
     .cuenta {
         @extend .locales;
     }
    
-    /* "productos con flex */
+
     .productos {
         display: flex;
         img{
@@ -169,7 +202,7 @@ main{
         }
     }
     
-    /* "productos galeria flex" */
+
     .actual{
         display: flex;
         line-height: 30px;
@@ -190,16 +223,16 @@ main{
             width: 100px;
             object-fit: cover;    
             margin: 1rem;
-            border: 2px solid turquoise;
+            border: 2px solid $turquesa;
             transition: all 2s;
             &:hover{
-                border: 3px solid lightcoral;
+                border: 3px solid $coral;
                 width: 130px;
             }
         }
     }
     
-    /* "grid en index" */
+
     .dest{
         width: 80%;
         max-width: 700px;
@@ -247,12 +280,12 @@ main{
             transition: all 2s;
             &:hover{
                 height: 80%;
-                border: 5px solid lightcoral;
+                border: 5px solid $coral;
             }
         }
     }
 
-    /* "nombrar al area"*/
+
     .imagen1{
         grid-area: pic1;
     }
@@ -300,5 +333,21 @@ main{
     }
     .gal6{
         grid-area: gal6;
+    }
+
+    button{
+        padding: 8px;
+        border-radius: 8px;
+        border: 1 px solid $turquesa;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 2s;
+        margin-top: 15px;
+        &:hover{ 
+            border: 2px solid $petroleo;
+            color: $blanco;
+            background-color: $petroleo;
+        }
     }
 }

@@ -36,7 +36,7 @@ footer {
     float: left;
     margin: 0 5rem;
     line-height: 1.5rem;
-    text-transform: uppercase;
+    text-transform: inherit;
     &:hover{
         color: $turquesa;
         height: 50%;
