@@ -25,6 +25,7 @@ main{
         transition: all 2s;  
         text-align: center;
         transition: 2s;
+        color: $bordo;
         &:hover{
             font-size: 2.5rem;
             color: $petroleo;
@@ -32,7 +33,7 @@ main{
     }
     .historico img{
         width: 800px;
-        margin: 2rem;
+        margin: 1rem;
         justify-content: center;
         transition: 2s;
         border-radius: 1rem 1rem 1rem 1rem;
@@ -42,7 +43,7 @@ main{
     }
     .actual img{
         width: 300px;
-        margin: 2rem;
+        margin: 1rem;
         justify-content: center;
         transition: 2s;
         border-radius: 1rem 1rem 1rem 1rem;
@@ -67,6 +68,7 @@ main{
         padding: 10px 15px;
         ul{
             list-style: none;
+            padding-left: 0%;
             li {
                 .icon-facebook{background: #2e406e; border-radius: 0 1rem 0 0;}
                 .icon-twitter{background: #339dc5;}
@@ -100,14 +102,15 @@ main{
         margin: 0 5rem;
         line-height: 1.5rem;
         text-transform: uppercase;
+        border-radius: 1rem 1rem 1rem 1rem;
         img{
             width: 500px;
             margin: 2rem;
             justify-content: center;
             transition: 2s;
-
+            border-radius: 1rem 1rem 1rem 1rem;
             &:hover{
-                border: 3px solid $coral;
+                border: 3px solid $turquesa;
             }
         }
         &:hover{
@@ -151,7 +154,7 @@ main{
             @include local;
             transition: 2s;
             &:hover{
-                border: 3px solid $coral;
+                border: 3px solid $turquesa;
             }
         }
     }
@@ -169,7 +172,7 @@ main{
             @include local;
             border-radius: 1rem 1rem 1rem 1rem;
             &:hover{
-                border: 3px solid $coral;
+                border: 3px solid $turquesa;
             }
         }
     }
@@ -188,23 +191,21 @@ main{
             justify-content: center;
             border-radius: 1rem 1rem 1rem 1rem;
             &:hover{
-                border: 3px solid $coral;
+                border: 3px solid $turquesa;
             }
         }
     }
     .cuenta {
         @extend .locales;
     }
-   
-
+  
     .productos {
         display: flex;
         img{
             width: 500px;
             object-fit: cover;
             margin: 2rem;     
-            justify-content: center;  
-            border-radius: 1rem 1rem 1rem 1rem;
+            justify-content: center;
         }
     }
     
@@ -233,13 +234,12 @@ main{
             transition: all 2s;
             border-radius: 1rem 1rem 1rem 1rem;
             &:hover{
-                border: 3px solid $coral;
+                border: 3px solid $turquesa;
                 width: 130px;
             }
         }
     }
     
-
     .dest{
         width: 100%;
         max-width: 700px;
@@ -273,7 +273,6 @@ main{
         display: grid;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
         grid-template-areas: 
         "gal1 gal2 gal2"
         "gal3 gal4 gal4"
@@ -289,7 +288,7 @@ main{
             border-radius: 1rem 1rem 1rem 1rem;
             &:hover{
                 height: 80%;
-                border: 5px solid $coral;
+                border: 5px solid $turquesa;
             }
         }
     }

@@ -1,11 +1,15 @@
-@media (max-width: 500px){       
+@media (min-width: 700px){  
+    .actual{
+        display: none;
+    }
+
     .item   {
         &:hover{
             font-weight: normal;
         }    
     } 
     .dest{
-         grid-template-areas: 
+        grid-template-columns: repeat(2, 1fr);         grid-template-areas: 
         "pic1 pic2" 
         "pic3 pic4" 
         "pic5 pic6"
@@ -15,6 +19,7 @@
         gap: 5px;
     }
     .gallery{
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "gal1 gal2"
         "gal3 gal4"
@@ -23,13 +28,14 @@
         gap: 5px;
     }
 }
-@media (max-width: 480px){     
+@media (min-width: 480px){     
     .item   {
         &:hover{
         font-weight: normal;
         }  
     }   
     .dest{
+        grid-template-columns: repeat(1, 1fr);
          grid-template-areas: 
         "pic1" 
         "pic2" 

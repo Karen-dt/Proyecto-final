@@ -8,8 +8,7 @@ html {
 
 body {
   font-family: 'EB Garamond', serif;
-  background-color: lightsalmon;
-  background-image: url(../imag/pawel-czerwinski-9lNoGFaNI2c-unsplash.jpg); }
+  background-color: #f4a282; }
 
 header h1 {
   text-align: center;
@@ -37,6 +36,11 @@ header ul {
 header li {
   list-style: none; }
 
+header .navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  text-transform: capitalize; }
+
 main section {
   background-size: cover;
   max-width: 1200px;
@@ -59,26 +63,27 @@ main section {
     font-size: 2rem;
     transition: all 2s;
     text-align: center;
-    transition: 2s; }
+    transition: 2s;
+    color: #4b1818; }
     main section h3:hover {
       font-size: 2.5rem;
       color: #073632; }
   main section .historico img {
     width: 800px;
-    margin: 2rem;
+    margin: 1rem;
     justify-content: center;
     transition: 2s;
     border-radius: 1rem 1rem 1rem 1rem; }
     main section .historico img:hover {
-      border: 3px solid lightsalmon; }
+      border: 3px solid #f4a282; }
   main section .actual img {
     width: 300px;
-    margin: 2rem;
+    margin: 1rem;
     justify-content: center;
     transition: 2s;
     border-radius: 1rem 1rem 1rem 1rem; }
     main section .actual img:hover {
-      border: 3px solid lightsalmon; }
+      border: 3px solid #f4a282; }
   main section .hist {
     align-items: center; }
   main section div {
@@ -92,7 +97,8 @@ main .barra-icon {
   z-index: 2000;
   padding: 10px 15px; }
   main .barra-icon ul {
-    list-style: none; }
+    list-style: none;
+    padding-left: 0%; }
     main .barra-icon ul li .icon-facebook {
       background: #2e406e;
       border-radius: 0 1rem 0 0; }
@@ -126,14 +132,16 @@ main .product {
   float: left;
   margin: 0 5rem;
   line-height: 1.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-radius: 1rem 1rem 1rem 1rem; }
   main .product img {
     width: 500px;
     margin: 2rem;
     justify-content: center;
-    transition: 2s; }
+    transition: 2s;
+    border-radius: 1rem 1rem 1rem 1rem; }
     main .product img:hover {
-      border: 3px solid lightsalmon; }
+      border: 3px solid #1ea093; }
   main .product:hover {
     color: #1ea093;
     height: 50%;
@@ -169,7 +177,7 @@ main .local {
     text-transform: capitalize;
     transition: 2s; }
     main .local img:hover {
-      border: 3px solid lightsalmon; }
+      border: 3px solid #1ea093; }
 
 main .locales, main .stilomicuenta, main .cuenta {
   padding: 1rem;
@@ -186,7 +194,7 @@ main .login {
     text-transform: capitalize;
     border-radius: 1rem 1rem 1rem 1rem; }
     main .login img:hover {
-      border: 3px solid lightsalmon; }
+      border: 3px solid #1ea093; }
 
 main .stilomicuenta {
   text-align: justify;
@@ -200,7 +208,7 @@ main .cuentas {
     justify-content: center;
     border-radius: 1rem 1rem 1rem 1rem; }
     main .cuentas img:hover {
-      border: 3px solid lightsalmon; }
+      border: 3px solid #1ea093; }
 
 main .productos {
   display: flex; }
@@ -208,8 +216,7 @@ main .productos {
     width: 500px;
     object-fit: cover;
     margin: 2rem;
-    justify-content: center;
-    border-radius: 1rem 1rem 1rem 1rem; }
+    justify-content: center; }
 
 main .actual {
   display: flex;
@@ -235,7 +242,7 @@ main .fotosp {
     transition: all 2s;
     border-radius: 1rem 1rem 1rem 1rem; }
     main .fotosp img:hover {
-      border: 3px solid lightsalmon;
+      border: 3px solid #1ea093;
       width: 130px; }
 
 main .dest {
@@ -264,7 +271,6 @@ main .gallery {
   display: grid;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "gal1 gal2 gal2" "gal3 gal4 gal4" "gal3 gal5 gal6";
   gap: 25px;
   margin-bottom: 20px; }
@@ -276,7 +282,7 @@ main .gallery {
     border-radius: 1rem 1rem 1rem 1rem; }
     main .gallery img:hover {
       height: 80%;
-      border: 5px solid lightsalmon; }
+      border: 5px solid #1ea093; }
 
 main .imagen1 {
   grid-area: pic1; }
@@ -369,7 +375,7 @@ footer .contenedor {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 footer .item {
   margin: 1rem;
@@ -383,20 +389,25 @@ footer .item {
     height: 50%;
     font-weight: bold; }
 
-@media (max-width: 500px) {
+@media (min-width: 700px) {
+  .actual {
+    display: none; }
   .item:hover {
     font-weight: normal; }
   .dest {
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "pic1 pic2"  "pic3 pic4"  "pic5 pic6" "pic7 pic8" "pic9 pic10";
     gap: 5px; }
   .gallery {
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "gal1 gal2" "gal3 gal4" "gal5 gal6";
     gap: 5px; } }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .item:hover {
     font-weight: normal; }
   .dest {
+    grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "pic1"  "pic2"  "pic3"  "pic4"  "pic5" "pic6" "pic7"  "pic8" "pic9" "pic10";
     gap: 5px; }
   .gallery {

@@ -1,7 +1,7 @@
 
 $negro: black;
 $blanco: white;
-$coral: lightsalmon;
+$coral: #f4a282;
 $bordo:rgb(75, 24, 24);
 $turquesa: rgb(30, 160, 147);
 $petroleo: rgb(7, 54, 50);
@@ -16,7 +16,6 @@ html{
 body{
     font-family: 'EB Garamond', serif;
     background-color: $coral;
-    background-image: url(../imag/pawel-czerwinski-9lNoGFaNI2c-unsplash.jpg);
 }
 @import "header";
 @import "main";
