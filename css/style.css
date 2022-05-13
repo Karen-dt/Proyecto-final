@@ -389,7 +389,7 @@ footer .item {
     height: 50%;
     font-weight: bold; }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .actual {
     display: none; }
   .item:hover {
@@ -403,7 +403,7 @@ footer .item {
     grid-template-areas: "gal1 gal2" "gal3 gal4" "gal5 gal6";
     gap: 5px; } }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
   .item:hover {
     font-weight: normal; }
   .dest {

@@ -1,4 +1,4 @@
-@media (min-width: 700px){  
+@media (max-width: 700px){  
     .actual{
         display: none;
     }
@@ -28,7 +28,7 @@
         gap: 5px;
     }
 }
-@media (min-width: 480px){     
+@media (max-width: 480px){     
     .item   {
         &:hover{
         font-weight: normal;
