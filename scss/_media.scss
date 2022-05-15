@@ -1,15 +1,18 @@
-@media (max-width: 700px){  
+@media screen and (max-width: 768px){  
     .actual{
         display: none;
+        justify-content: center;
     }
-
+    .stilomicuenta {
+        display: none;
+    }
     .item   {
         &:hover{
             font-weight: normal;
         }    
     } 
     .dest{
-        grid-template-columns: repeat(2, 1fr);         grid-template-areas: 
+        grid-template-areas: 
         "pic1 pic2" 
         "pic3 pic4" 
         "pic5 pic6"
@@ -19,7 +22,6 @@
         gap: 5px;
     }
     .gallery{
-        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "gal1 gal2"
         "gal3 gal4"
@@ -28,25 +30,21 @@
         gap: 5px;
     }
 }
-@media (max-width: 480px){     
+@media screen and (min-width: 480px){   
+    .actual{
+        display: none;
+        justify-content: center;
+    }
+    .stilomicuenta {
+        display: none;
+    } 
     .item   {
         &:hover{
         font-weight: normal;
         }  
     }   
     .dest{
-        grid-template-columns: repeat(1, 1fr);
-         grid-template-areas: 
-        "pic1" 
-        "pic2" 
-        "pic3" 
-        "pic4" 
-        "pic5"
-        "pic6"
-        "pic7" 
-        "pic8"
-        "pic9"
-        "pic10"
+        display: none
         ;
         gap: 5px;
     }
