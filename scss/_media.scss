@@ -1,12 +1,13 @@
 @media screen and (max-width: 768px){  
+    .historico{
+        width: 50%;
+    }
     .actual{
-        display: none;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
-    .stilomicuenta {
-        display: none;
-    }
-    .item   {
+    .item {
         &:hover{
             font-weight: normal;
         }    
@@ -30,13 +31,12 @@
         gap: 5px;
     }
 }
-@media screen and (min-width: 480px){   
+@media screen and (max-width: 480px){   
     .actual{
-        display: none;
-        justify-content: center;
+        flex-direction: column;
     }
     .stilomicuenta {
-        display: none;
+        flex-direction: column;
     } 
     .item   {
         &:hover{

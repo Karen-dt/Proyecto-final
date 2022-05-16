@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: 'EB Garamond', serif;
-  background-color: #f0936f; }
+  background-color: #eaa78d; }
 
 header h1 {
   text-align: center;
@@ -76,7 +76,7 @@ main section {
     transition: 2s;
     border-radius: 1rem 1rem 1rem 1rem; }
     main section .historico img:hover {
-      border: 3px solid #f0936f; }
+      border: 3px solid #eaa78d; }
   main section .actual img {
     width: 300px;
     margin: 1rem;
@@ -84,7 +84,7 @@ main section {
     transition: 2s;
     border-radius: 1rem 1rem 1rem 1rem; }
     main section .actual img:hover {
-      border: 3px solid #f0936f; }
+      border: 3px solid #eaa78d; }
   main section .hist {
     align-items: center; }
   main section div {
@@ -165,7 +165,8 @@ main .atencion {
   text-align: center;
   align-items: center;
   text-transform: capitalize;
-  width: 50%; }
+  width: 50%;
+  padding-left: 15px; }
 
 main .local {
   display: flex; }
@@ -273,7 +274,7 @@ main .gallery {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "gal1 gal2 gal2" "gal3 gal4 gal4" "gal3 gal5 gal6";
   gap: 25px;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
   main .gallery img {
     width: 100%;
     height: 87%;
@@ -375,26 +376,28 @@ footer .contenedor {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  background-color: #f35b53; }
 
 footer .item {
-  margin: 1rem;
   padding: 1rem;
   float: left;
   margin: 0 5rem;
   line-height: 1.5rem;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  transition: all 2s; }
   footer .item:hover {
     color: #1ea093;
     height: 50%;
     font-weight: bold; }
 
 @media screen and (max-width: 768px) {
+  .historico {
+    width: 50%; }
   .actual {
-    display: none;
-    justify-content: center; }
-  .stilomicuenta {
-    display: none; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .item:hover {
     font-weight: normal; }
   .dest {
@@ -404,12 +407,11 @@ footer .item {
     grid-template-areas: "gal1 gal2" "gal3 gal4" "gal5 gal6";
     gap: 5px; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .actual {
-    display: none;
-    justify-content: center; }
+    flex-direction: column; }
   .stilomicuenta {
-    display: none; }
+    flex-direction: column; }
   .item:hover {
     font-weight: normal; }
   .dest {
