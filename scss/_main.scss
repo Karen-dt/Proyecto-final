@@ -6,9 +6,12 @@ main{
         width: 75%;
         margin: 0 15%;
         margin-top: 15px;
-        .p{
+        p{
             align-items: center;
-    }
+            line-height: 2rem;
+            font-size: x-large;
+            text-transform: inherit;
+        }
     h2{
         text-align: center;
         font-size: 2rem;
@@ -58,8 +61,7 @@ main{
     div{
         justify-content: space-between;
     }
-} 
-    
+    }   
     .barra-icon{
         position: fixed;
         left: 0;
@@ -119,7 +121,6 @@ main{
             font-weight: bold;
         }
     }
-
     @mixin formulario{
         text-align: center;
         align-items: center;
@@ -140,8 +141,6 @@ main{
         width: 50%;
         padding-left: 15px;
     }
-    
-
     @mixin local {
         align-content: center;
         justify-content: center;
@@ -182,7 +181,6 @@ main{
         text-align: justify;
         display: flex;
     }
-
     .cuentas {
         display: flex;
         img{
@@ -198,7 +196,6 @@ main{
     .cuenta {
         @extend .locales;
     }
-  
     .productos {
         display: flex;
         img{
@@ -207,8 +204,7 @@ main{
             margin: 2rem;     
             justify-content: center;
         }
-    }
-    
+    }  
     .actual{
         display: flex;
         line-height: 30px;
@@ -238,7 +234,6 @@ main{
             }
         }
     }
-    
     .dest{
         width: 100%;
         max-width: 700px;
@@ -291,8 +286,6 @@ main{
             }
         }
     }
-
-
     .imagen1{
         grid-area: pic1;
     }
@@ -341,7 +334,6 @@ main{
     .gal6{
         grid-area: gal6;
     }
-
     button{
         padding: 8px;
         border-radius: 8px;

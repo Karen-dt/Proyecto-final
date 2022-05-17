@@ -48,8 +48,11 @@ main section {
   width: 75%;
   margin: 0 15%;
   margin-top: 15px; }
-  main section .p {
-    align-items: center; }
+  main section p {
+    align-items: center;
+    line-height: 2rem;
+    font-size: x-large;
+    text-transform: inherit; }
   main section h2 {
     text-align: center;
     font-size: 2rem;
@@ -386,10 +389,12 @@ footer .item {
   line-height: 1.5rem;
   text-transform: capitalize;
   transition: all 2s; }
-  footer .item:hover {
-    color: #1ea093;
-    height: 50%;
-    font-weight: bold; }
+  footer .item .lista {
+    cursor: pointer; }
+    footer .item .lista:hover {
+      color: #1ea093;
+      height: 50%;
+      font-weight: bold; }
 
 @media screen and (max-width: 768px) {
   .historico {
@@ -399,24 +404,14 @@ footer .item {
     justify-content: center;
     align-items: center; }
   .item:hover {
-    font-weight: normal; }
-  .dest {
-    grid-template-areas: "pic1 pic2"  "pic3 pic4"  "pic5 pic6" "pic7 pic8" "pic9 pic10";
-    gap: 5px; }
-  .gallery {
-    grid-template-areas: "gal1 gal2" "gal3 gal4" "gal5 gal6";
-    gap: 5px; } }
+    font-weight: normal; } }
 
 @media screen and (max-width: 480px) {
+  .historico {
+    width: 50%; }
   .actual {
     flex-direction: column; }
   .stilomicuenta {
     flex-direction: column; }
   .item:hover {
-    font-weight: normal; }
-  .dest {
-    display: none;
-    gap: 5px; }
-  .gallery {
-    grid-template-areas: "gal1" "gal2" "gal3"  "gal4" "gal5"  "gal6";
-    gap: 5px; } }
+    font-weight: normal; } }

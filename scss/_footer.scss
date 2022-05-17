@@ -23,26 +23,30 @@ footer {
             background-color: $petroleo;
         }
     }
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    background-color: $footer; 
-}
-.item{
-    padding: 1rem;
-    float: left;
-    margin: 0 5rem;
-    line-height: 1.5rem;
-    text-transform: capitalize;
-    transition: all 2s;
-    &:hover{
-        color: $turquesa;
-        height: 50%;
-        font-weight: bold;
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        background-color: $footer; 
     }
-}
+    .item{
+        padding: 1rem;
+        float: left;
+        margin: 0 5rem;
+        line-height: 1.5rem;
+        text-transform: capitalize;
+        transition: all 2s;
+        .lista{
+            cursor: pointer;
+            &:hover{
+                color: $turquesa;
+                height: 50%;
+                font-weight: bold;
+            }
+        }
+    
+    }
 }
